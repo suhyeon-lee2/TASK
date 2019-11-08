@@ -2,18 +2,8 @@
 #include <stdio.h>
 
 int main(void) {
-	int a, b;
-	
-	printf("두 정수를 입력하시오:");
-	scanf("%d %d", &a, &b);
-
-	if (a >b){
-		printf("몫은 %d이며 나머지는 %d 입니다.", a / b, a % b);
-	}
-	else if (a < b) {
-		printf("몫은 %d이며 나머지는 %d입니다.", b / a, b % a);
-	}
-	return 0;
-
-
+	float a;
+	printf("파운드로 계산할 무게를 입력하시오:");
+	scanf("%f", &a);
+	printf("입력하신 무게는 %.3f파운드 입니다.", a * 0.453592);
 }
